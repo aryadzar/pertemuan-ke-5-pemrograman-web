@@ -6,9 +6,11 @@
     <title>Pertemuan Web ke - 5</title>
 </head>
 <body>
-    <form action="terima2.php" method="POST">
+    <form action="terima.php" method="POST">
     <label>Nama</label>
-    <input type="text" name="nama" value=""><br><br>
+    <input type="text" name="nama" value="<?php
+    echo $_POST["nama"];
+    ?>"><br><br>
     <label>Jenis Kelamin</label><br><br>
     <input type="radio" name="jk" value="laki-laki">laki-laki
     <input type="radio" name="jk" value="Perempuan">perempuan <br>
